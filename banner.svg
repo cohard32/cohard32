@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="cohard32">
+  <!-- ROY MESSANGER teması ile aynı palet (lib/tema.dart) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050F0A"/>
+      <stop offset="55%" stop-color="#071A10"/>
+      <stop offset="100%" stop-color="#0D2818"/>
+    </linearGradient>
+    <linearGradient id="neonY" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4FF5C"/>
+      <stop offset="60%" stop-color="#B4FF3C"/>
+      <stop offset="100%" stop-color="#A8E02A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B4FF3C" stop-opacity="0.28"/>
+      <stop offset="70%" stop-color="#B4FF3C" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#B4FF3C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="kenar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B4FF3C" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#B4FF3C" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B4FF3C" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="izgara" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#B4FF3C" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#izgara)"/>
+  <ellipse cx="1010" cy="60" rx="420" ry="270" fill="url(#glow)"/>
+  <ellipse cx="130" cy="300" rx="330" ry="210" fill="url(#glow)" opacity="0.5"/>
+
+  <!-- 3B terminal kutusu -->
+  <g transform="translate(84 84)">
+    <rect x="7" y="15" width="140" height="112" rx="22" fill="#2A5410" opacity="0.5"/>
+    <rect x="4" y="9"  width="140" height="112" rx="22" fill="#3F7A10"/>
+    <rect x="2" y="4"  width="140" height="112" rx="22" fill="#63B81A"/>
+    <rect x="0" y="0"  width="140" height="112" rx="22" fill="#0D2818" stroke="#B4FF3C" stroke-opacity="0.5" stroke-width="2"/>
+    <circle cx="24" cy="24" r="5" fill="#FF5A5A"/>
+    <circle cx="42" cy="24" r="5" fill="#D4FF5C"/>
+    <circle cx="60" cy="24" r="5" fill="#63B81A"/>
+    <text x="24" y="72" font-family="Consolas, Menlo, monospace" font-size="26" font-weight="700" fill="#B4FF3C">&gt;_</text>
+    <rect x="62" y="54" width="15" height="24" fill="#B4FF3C" opacity="0.85"/>
+  </g>
+
+  <g font-family="Consolas, Menlo, monospace" font-weight="700" font-size="76" letter-spacing="1">
+    <text x="268" y="150" fill="#2A5410" opacity="0.6">cohard32</text>
+    <text x="267" y="147" fill="#3F7A10">cohard32</text>
+    <text x="266" y="144" fill="#63B81A">cohard32</text>
+    <text x="265" y="141" fill="url(#neonY)">cohard32</text>
+  </g>
+
+  <text x="268" y="188" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="24" font-weight="500" fill="#EAFFD8" opacity="0.9">
+    Android ve Windows için uygulama geliştiriyorum
+  </text>
+
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600">
+    <g transform="translate(268 212)">
+      <rect width="112" height="40" rx="13" fill="#14301E" stroke="#B4FF3C" stroke-opacity="0.28"/>
+      <text x="56" y="26" text-anchor="middle" fill="#B4FF3C">Flutter</text>
+    </g>
+    <g transform="translate(394 212)">
+      <rect width="112" height="40" rx="13" fill="#14301E" stroke="#B4FF3C" stroke-opacity="0.28"/>
+      <text x="56" y="26" text-anchor="middle" fill="#B4FF3C">Python</text>
+    </g>
+    <g transform="translate(520 212)">
+      <rect width="126" height="40" rx="13" fill="#14301E" stroke="#B4FF3C" stroke-opacity="0.28"/>
+      <text x="63" y="26" text-anchor="middle" fill="#B4FF3C">Firebase</text>
+    </g>
+    <g transform="translate(660 212)">
+      <rect width="112" height="40" rx="13" fill="#14301E" stroke="#B4FF3C" stroke-opacity="0.28"/>
+      <text x="56" y="26" text-anchor="middle" fill="#B4FF3C">Android</text>
+    </g>
+  </g>
+
+  <rect x="0" y="297" width="1200" height="3" fill="url(#kenar)"/>
+</svg>

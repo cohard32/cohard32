@@ -1,0 +1,34 @@
+name: Yilan
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # Her gün 06:00 (TR)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#e8b24a&color_dots=#ebedf0,#b3e5fc,#4fc3f7,#039be5,#0277bd
+            dist/snake-dark.svg?palette=github-dark&color_snake=#e8b24a&color_dots=#161b22,#003a57,#00668f,#0090cc,#00b0ff
+
+      # Üretilen SVG'ler 'output' dalına yazılır; hata olursa eski dosyalar kalır
+      - uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: yılan güncellendi"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
