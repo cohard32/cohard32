@@ -81,20 +81,3 @@ Depolama cihazları için sağlık ölçümü ve veri kurtarma aracı.
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00b0ff,100:00b0ff00" width="100%">
-
-## 📊 GitHub <sub><sup>· metrics</sup></sub>
-
-<div align="center">
-  <img src="metrics.svg" alt="GitHub metrikleri" width="100%">
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cohard32/cohard32/output/snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cohard32/cohard32/output/snake-light.svg">
-    <img src="https://raw.githubusercontent.com/cohard32/cohard32/output/snake-dark.svg" alt="Katkı yılanı" width="100%">
-  </picture>
-</div>
-
-<!-- Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:00b0ff,45:0a2433,100:0d0d0d" alt="" width="100%">
